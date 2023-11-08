@@ -1,7 +1,9 @@
 import os
 
 user = os.getlogin()
-download_path = rf'C:/Users\{user}\Downloads'
+# download_path = rf'C:/Users\{user}\Downloads'
+print('Digite o caminho do diretório:')
+download_path = rf'{input()}'
 
 
 list_download_file = os.listdir(download_path)
